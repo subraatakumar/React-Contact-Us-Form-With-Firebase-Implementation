@@ -14,14 +14,14 @@ function App() {
 
   useEffect(()=>{
     const firebaseConfig = {
-      apiKey: "AIzaSyAJW7xa3wb_R5qEcFcWZWlynpZCWMbtStU",
-      authDomain: "reactfirebasecontactus.firebaseapp.com",
-      databaseURL: "https://reactfirebasecontactus-default-rtdb.firebaseio.com/",
-      projectId: "reactfirebasecontactus",
-      storageBucket: "reactfirebasecontactus.appspot.com",
-      messagingSenderId: "865230167286",
-      appId: "1:865230167286:web:88f2348b4751a67cd460d7",
-      measurementId: "G-EV9NZC9TQH"
+      apiKey: process.env.REACT_APP_API_KEY,
+      authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+      databaseURL: process.env.REACT_APP_DATABASE_URL,
+      projectId: process.env.REACT_APP_PROJECT_ID,
+      storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+      messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+      appId: process.env.REACT_APP_APP_ID,
+      measurementId: process.env.REACT_APP_MEASUREMENT_ID
     };
 
     // Initialize Firebase

@@ -32,7 +32,6 @@ form {
   background-color: var(--primary-color-dark);
   color: var(--primary-text-color);
   padding: 50px;
-  box-shadow: rgba(0, 0, 0, 0.24) 10px 10px 3px;
 }
 
 .formInput {
@@ -95,5 +94,6 @@ button[type="submit"] {
 
   form {
     width: 450px;
+    box-shadow: rgba(0, 0, 0, 0.24) 10px 10px 3px;    
   }
 }
