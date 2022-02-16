@@ -1,12 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto+Condensed&display=swap');
+
 :root {
   --primary-color : rgb(255, 38, 0);
   --primary-color-light : rgb(255, 67, 34);
   --primary-color-dark : rgb(80, 13, 1);
   --primary-text-color: #fff;
 }
+
 * {
   margin: 0px;
   padding: 0px;
+  font-family: 'Poppins', sans-serif;
 }
 
 #root {
@@ -17,13 +21,18 @@
   height: 100vh;
 }
 
-.App form {
+h1 {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+form {
   display: flex;
   flex-direction: column;
   gap: 30px;
   background-color: var(--primary-color-dark);
   color: var(--primary-text-color);
   padding: 50px;
+  box-shadow: rgba(0, 0, 0, 0.24) 10px 10px 3px;
 }
 
 .formInput {
@@ -36,6 +45,11 @@
   background-color: var(--primary-color-dark);
   border : none;
   border-bottom: 1px solid var(--primary-text-color);
+  color: var(--primary-text-color);
+}
+
+.formInput input:focus {
+  outline: none;
 }
 
 .socialIcons {
@@ -45,11 +59,41 @@
 
 button[type="submit"] {
   padding: 10px;
+  font-weight: bolder;
 }
 
-a {
-  color: var(--primary-text-color);
-}
-a:hover {
+.socialBtn:hover {
   color: var(--primary-color-light);
+  cursor: pointer;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+  #root {
+    justify-content:center;
+    flex-direction: column;
+    align-items: stretch;
+    background-color: var(--primary-color-dark);
+  }
+}
+  
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+  #root {
+    overflow-x: hidden;
+  }
+
+  form {
+    width: 450px;
+  }
+}
+
+@media (min-width: 768px)  and (max-width: 9900px) {
+  #root {
+    overflow-x: hidden;
+  }
+
+  form {
+    width: 450px;
+  }
 }
