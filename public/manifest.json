@@ -1,0 +1,9 @@
+{
+  "short_name": "React Firebase Contact Us",
+  "name": "React Firebase Contact Us",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
