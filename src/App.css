@@ -1,0 +1,55 @@
+:root {
+  --primary-color : rgb(255, 38, 0);
+  --primary-color-light : rgb(255, 67, 34);
+  --primary-color-dark : rgb(80, 13, 1);
+  --primary-text-color: #fff;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color-light);
+  height: 100vh;
+}
+
+.App form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: var(--primary-color-dark);
+  color: var(--primary-text-color);
+  padding: 50px;
+}
+
+.formInput {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.formInput input {
+  background-color: var(--primary-color-dark);
+  border : none;
+  border-bottom: 1px solid var(--primary-text-color);
+}
+
+.socialIcons {
+  display: flex;
+  gap: 10px;
+}
+
+button[type="submit"] {
+  padding: 10px;
+}
+
+a {
+  color: var(--primary-text-color);
+}
+a:hover {
+  color: var(--primary-color-light);
+}
