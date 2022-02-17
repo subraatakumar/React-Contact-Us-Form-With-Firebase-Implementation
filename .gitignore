@@ -4,6 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
+SubrataKumarDas.zip
 
 # testing
 /coverage
@@ -19,7 +20,6 @@
 .env.test.local
 .env.production.local
 .firebaserc
-SubrataKumarDas.zip
 
 npm-debug.log*
 yarn-debug.log*
