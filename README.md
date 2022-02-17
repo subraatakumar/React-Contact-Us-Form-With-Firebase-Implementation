@@ -17,7 +17,7 @@ Contact Us form created using React. Firebase Realtime Database is used to store
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/subratsir/blog-app/issues).
+Feel free to check the [issues page](https://github.com/subratsir/React-Contact-Us-Form-With-Firebase-Implementation/issues).
 
 ## Show your support
 
