@@ -41,7 +41,7 @@ function App() {
     // currentTimeStamp is used as key to separate data sets
     set(ref(db, `contactus/${currentTimeStamp}`), data)
     .then(() => {
-      console.log("Message Sent Successfully.");
+      //console.log("Message Sent Successfully.");
       setTextColor('green');
       setError("Message Sent Successfully.");
       setName('');
@@ -49,7 +49,7 @@ function App() {
       setEmail('');
     })
     .catch((error) => {
-      console.log("Unable to send data! Please try later...");
+      //console.log("Unable to send data! Please try later...");
       setTextColor('red');
       setError("Unable to send data! Please try later...");
       setTimeout(()=>{
@@ -95,7 +95,9 @@ function App() {
             required
           />
         </div>
-        <button type="submit">SEND MESSAGE</button>
+        <div>
+          <button type="submit">SEND MESSAGE</button>
+        </div>
         <div className='socialIcons'>
           <span className="socialBtn"><FaInstagram /></span>
           <span className="socialBtn"><FaTwitter /></span>
