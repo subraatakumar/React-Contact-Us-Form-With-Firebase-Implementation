@@ -4,9 +4,9 @@ Contact Us form created using React. Firebase Realtime Database is used to store
 
 ## Features
 
--- Form validation
--- React Icons
--- Firebase Realtime Database
+- Form validation
+- React Icons
+- Firebase Realtime Database
 
 ## 🧰 [See it Live Here](https://reactfirebasecontactus.web.app/)
 
